@@ -68,7 +68,7 @@ def select(view, region):
     sel_set = view.sel()
     sel_set.clear()
     sel_set.add(region)
-    sublime.set_timeout(functools.partial(view.show_at_center, region), 1)
+    sublime.set_timeout(functools.partial(view.show_at_center, region), 2)
 
 
 def in_main(f):
